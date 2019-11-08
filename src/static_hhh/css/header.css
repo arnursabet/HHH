@@ -52,9 +52,10 @@
     margin-right: 1rem;
     text-decoration: none;
     color: #3E3737;
+    padding: 0px 8px;
 }
 .site_nav a:hover {
-    color: #11e00a;
+    color: #fff;
 }
 
 /***************************** 

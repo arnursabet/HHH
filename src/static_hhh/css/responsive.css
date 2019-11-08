@@ -1,0 +1,33 @@
+@media only screen and (max-width: 768px) {
+  #introduction {
+    padding: 0px;
+  }
+  #introduction .message {
+    margin-left: 30px;
+    width: 100%;
+    width: 400px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    margin: 0 auto;
+  }
+  #radio, .books_container, #about, .d-f {
+    flex-direction: column;
+  }
+  #radio iframe {
+    width: 100%;
+  }
+  .books_container {
+    padding: 30px 0px;
+  }
+
+  #about .card {
+    width: 100%;
+  }
+
+  .book_frame {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+}
