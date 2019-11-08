@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,800|Source+Code+Pro:400,500&display=swap');
+
+
+.site_header {
+     position: absolute;
+     top: 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 15px;
+     width: 100%;
+     left: 0;  
+     background: transparent; /* fallback for old browsers */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;  
+     z-index: 5;   
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ 
+.logo {
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+     font-size: 24pt;
+     font-weight: 400;
+     font-family: 'Montserrat', sans-serif;
+     color: #3E3737;
+}
+.logo:hover {
+    text-decoration: none;
+    color: #3E3737;
+}
+
+#image_logo {
+    width: 40px;
+    height: 40px;  
+
+}
+
+.site_nav {
+    display: flex;
+    margin-left: auto;
+}
+
+
+.site_nav a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #3E3737;
+}
+.site_nav a:hover {
+    color: #11e00a;
+}
+
+/***************************** 
+Dropdown Button 
+******************************/
+.dropbtn {
+    background: transparent;
+    color: #3E3737;
+    cursor: pointer;
+    font-size: inherit;
+    font-weight: inherit;
+    border: none; 
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    border-radius: 0px 0px 0px 0px;
+    /* box-shadow: 3px 6px 10px #999999;  */
+    width: 150px;
+    z-index:99;
+    position: absolute;
+    height: 0px;
+    overflow-y:scroll;
+    transition: height 1s ease;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    padding: 12px 16px;
+    width: inherit;
+    font-size: 12pt;
+    text-decoration: none;
+    display: block;
+    color: cornflowerblue;
+     
+  }
+  .dropdown-content a:last-child {
+    border-radius: 0px 0px 0px 0px;
+     
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover{
+      background-color:#ddd;
+       
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;   
+      height: 200px;  
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {  
+      color: #FFFFFF;   
+  }

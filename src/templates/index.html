@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    
+  <!-- TOP PART OF THE PAGE -->
+    <div id="main_container">
+        <!--BODY PART OF THE PAGE-->
+        
+        <section id="introduction">
+                        <div class="message">
+                                <h3 class="display-3">Welcome.</h3>
+                                <p><em>Hip Hop Hub</em> is a web-space where you can obtain knowledge about Hip-Hop music.</p>
+                                <hr class="my-2">
+                                <p>Enjoy.</p>
+                                <p class="lead">
+                                <a class="btn btn-primary btn-lg" href="#!" role="button">Explore</a>
+                                </p>       
+                        </div>
+                        <img class="intro-image" src="{% static '/img/roland-808.png' %}" title="Roland 808 Drum Machine">
+                        <img class="intro-image-2" src="{% static '/img/mic.png' %}">
+                        <img class="intro-image-3" src="{% static '/img/parental.png' %}">
+        </section>
+
+        <section id="radio">
+                    <div class="left-panel">
+                        <h2><i class="fas fa-broadcast-tower"></i> Lo Fi Hip Hop Radio</h2>
+                        <p>
+                            Tune in when you feel like being productive, or simply chilling...
+                        </p>
+                    </div>
+                    
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/hHW1oY26kxQ" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"></iframe>  
+        </section> 
+
+        <section id="books">
+                    <div class="books_container">
+                                    <h2><i class="fas fa-book"></i>&nbsp;HHH Book Shelf</h2>
+                                    <div class="book_frame">
+                                        <img src="{% static 'img/rapYearBook.jpg' %}" alt="The Rap Year Book">
+                                        <br>
+                                        The Rap Yearbook by Serrano
+                                        <br>
+                                        <a href="books/RapYearBook.pdf" class="btn btn-info">Read Now</a>
+                                    </div>
+    
+                                    <div class="book_frame">
+                                        <img src="{% static 'img/makingBeats.jpg' %}" width="250px" alt="Making Beats">
+                                        <br>
+                                        Making Beats by Schloss
+                                        <br>
+                                        <a href="books/MakingBeats.pdf" class="btn btn-info">Read Now</a>
+                                    </div>
+                                            
+                    </div>
+        </section>
+                    <!-- <p>
+                        <a href="https://www.netflix.com/title/80141782"><img src="{% static 'img/hipHopEvolution.jpg' %}" alt="Hip Hop evolution logo"></a>
+                    </p> -->
+        <section id="about">
+                    <h2><i class="far fa-address-card"></i>&nbsp;About</h2>
+                    <div class="card">
+                        The HIP HOP HUB is an online resource for people who want to discover the subculture of Hip-Hop 
+                        from the beginning up until the present.
+                        <br>
+                        This webpage was built in memory of MUSC 237 Hip Hop Music Production course at Lake Forest College taught by Professor Lloyd Brodnax King.
+                        <br>
+                        Most of materials for the webpage come from the course.
+                    </div>
+                    
+        </section>
+       </div>
+        
+   
+    {% endblock content %}
+</html> 
+    
